@@ -35,7 +35,7 @@ export default function Expenses() {
             />
           </div>
         </div>
-        <div className="rounded-[0.625rem] bg-white pb-5 sm:pb-[54px]">
+        <div className="rounded-[0.625rem] bg-white pb-5 sm:rounded-[1.125rem] sm:pb-[3.375rem]">
           <h2 className="px-5 py-6 text-2xl font-bold text-ec-dark-brown sm:px-10 sm:py-[40px] sm:text-[1.97rem]">
             Spending - Last 7 days
           </h2>
