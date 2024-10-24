@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmsans.className} min-h-screen scroll-smooth bg-ec-orange antialiased`}
+        className={`${dmsans.className} min-h-screen scroll-smooth bg-ec-cream antialiased`}
       >
         {children}
       </body>
