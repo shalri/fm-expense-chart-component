@@ -17,35 +17,42 @@ export default function Expenses() {
     prevMonthExpense: 467.1,
   });
   return (
-    <main className="mx-auto grid min-h-screen w-full max-w-[400px] grid-cols-1 items-center justify-center px-4">
-      {" "}
-      {/* <main className="mx-auto grid min-h-screen w-full max-w-[400px] grid-cols-1 justify-center px-4 pt-[66px]"> */}
-      <section className="w-full space-y-4">
-        <div className="flex w-full items-center justify-between rounded-[0.625rem] bg-ec-red p-5 text-white">
-          <h1 className="flex flex-col text-[0.9375rem]">
+    <main className="mx-auto grid min-h-screen w-full max-w-[572px] grid-cols-1 items-center justify-center px-4">
+      <section className="w-full space-y-4 sm:space-y-6">
+        <div className="flex w-full items-center justify-between rounded-[0.625rem] bg-ec-red p-5 text-white sm:rounded-[1.125rem] sm:px-8 sm:pb-[1.375rem] sm:pt-[1.625rem]">
+          <h1 className="flex flex-col text-[0.9375rem] sm:text-[1.125rem]">
             My balance
-            <span className="text-[24px] font-bold">${currentBalance}</span>
+            <span className="mt-[0.125rem] text-[24px] font-bold sm:text-[1.96rem]">
+              ${currentBalance}
+            </span>
           </h1>
-          <Image src="/images/logo.svg" width={62} height={62} alt="logo" />
+          <div className="relative size-[3.875rem] sm:h-[3rem] sm:w-[5.375rem]">
+            <Image
+              src="/images/logo.svg"
+              fill
+              className="object-contain"
+              alt="logo"
+            />
+          </div>
         </div>
-        <div className="rounded-[0.625rem] bg-white pb-5">
-          <h2 className="px-5 py-6 text-2xl font-bold text-ec-dark-brown">
+        <div className="rounded-[0.625rem] bg-white pb-5 sm:pb-[54px]">
+          <h2 className="px-5 py-6 text-2xl font-bold text-ec-dark-brown sm:px-10 sm:py-[40px] sm:text-[1.97rem]">
             Spending - Last 7 days
           </h2>
-          <div className="h-[206px] border-none pl-1 pr-3">
+          <div className="h-[206px] border-none pl-1 pr-3 sm:pl-5 sm:pr-7">
             <BarChart />
           </div>
-          <div className="mt-5 px-5">
-            <div className="flex w-full justify-between border-t-2 border-t-orange-500/10 pt-[22px] text-ec-medium-brown">
-              <h2 className="flex flex-col text-base text-ec-medium-brown">
+          <div className="mt-5 px-5 sm:mt-8 sm:px-10">
+            <div className="flex w-full items-baseline justify-between border-t-2 border-t-orange-500/10 pt-[1.375rem] text-ec-medium-brown sm:pt-8">
+              <h2 className="flex flex-col text-base text-ec-medium-brown sm:text-[1.125rem]">
                 Total this month{" "}
-                <span className="pt-1 text-3xl font-bold text-ec-dark-brown">
+                <span className="pt-1 text-3xl font-bold text-ec-dark-brown sm:pt-4 sm:text-[3rem]">
                   ${currentMonthTotalExpense}
                 </span>
               </h2>
-              <div className="self-end">
-                <h3 className="flex flex-col self-end text-right text-[0.925rem] text-base">
-                  <span className="block pt-[22px] text-[0.9375rem] font-bold text-ec-dark-brown">
+              <div className="self-end sm:-mb-2">
+                <h3 className="flex flex-col justify-end self-end text-right text-[0.925rem] sm:text-[18px]">
+                  <span className="block self-end pt-[1.375rem] text-[0.9375rem] font-bold text-ec-dark-brown sm:sm:text-[1.125rem]">
                     {expenseIncreased ? "+" : ""}
                     {percentageChange}%
                   </span>{" "}
