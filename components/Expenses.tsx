@@ -28,7 +28,7 @@ export default function Expenses() {
           </h1>
           <div className="relative size-[3.875rem] sm:h-[3rem] sm:w-[5.375rem]">
             <Image
-              src="/images/logo.svg"
+              src="/fm-expense-chart-component/images/logo.svg"
               fill
               className="object-contain"
               alt="logo"
