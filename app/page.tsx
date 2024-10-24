@@ -1,13 +1,5 @@
-import Header from "../components/Header";
-import SandBox from "../components/Sandbox";
-import Footer from "../components/Footer";
+import Expenses from "@/components/Expenses";
 
 export default function Home() {
-  return (
-    <>
-      <Header />
-      <SandBox />
-      <Footer />
-    </>
-  );
+  return <Expenses />;
 }

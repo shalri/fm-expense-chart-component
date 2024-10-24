@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary */
+    --ec-red: 10, 79%, 65%;
+    --ec-cyan: 186, 34%, 60%;
+    /* Neutral */
+    --ec-dark-brown: 25, 47%, 15%;
+    --ec-medium-brown: 28, 10%, 53%;
+    --ec-cream: 27, 66%, 92%;
+    --ec-orange: 33, 100%, 98%;
+
+    /* Typography */
+    --font-size-base: 18px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-family: "DM Sans", sans-serif;
+  }
+}
+
+body {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+}
